@@ -17,7 +17,6 @@ const config: Config = {
       "primary-dark": "#474314",
       yellow: "#EEC91A",
       "yellow-alt": "#DDC74A",
-      "primary-hover": "#DDC74A",
       dark: "#57503E",
       light: "#EFE6C5",
       braun: "#A07C54",

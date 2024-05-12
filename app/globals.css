@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body{
+        @apply text-base text-dark bg-light;
+    }
+    h2 {
+        @apply uppercase text-center mt-10 text-dark font-black font-raleway text-3xl mb-5;
+    }
+    input, textarea{
+        @apply text-dark p-2 focus:drop-shadow-none active:drop-shadow-none;
+    }
+}
+@layer components {
+
+    #ul-nav {
+        @apply absolute top-12 bg-primary flex-col w-full justify-center justify-items-center md:flex md:static md:w-auto md:flex-row;
+    }
+    #ul-nav li {
+        @apply block flex items-center justify-center w-full h-12;
+    }
+    #ul-nav li a{
+        @apply uppercase font-semibold flex flex-row h-full w-full px-4 items-center justify-center text-white hover:bg-yellow-alt hover:text-dark;
+    }
+    .ul-card{
+        @apply py-2;
+    }
+    .ul-card li{
+        @apply text-center py-1;
+    }
+
+}
