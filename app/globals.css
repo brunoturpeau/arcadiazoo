@@ -27,3 +27,11 @@
         @apply bg-yellow-alt text-dark;
     }
 }
+@layer utilities{
+    .trait{
+        @apply w-[300px] mx-auto bg-braun h-1 mb-8 bg-opacity-20;
+    }
+    .h1{
+        @apply uppercase text-light backdrop-brightness-50 bg-primary/30 p-5 text-3xl font-black lg:text-4xl;
+    }
+}
