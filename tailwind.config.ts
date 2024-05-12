@@ -7,6 +7,25 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      white: "#ffffff",
+      primary: "#5C8B3B",
+      "primary-alt": "#86BA0D",
+      "primary-hover": "#B5B61A",
+      "primary-dark": "#474314",
+      yellow: "#EEC91A",
+      "yellow-alt": "#DDC74A",
+      "primary-hover": "#DDC74A",
+      dark: "#57503E",
+      light: "#EFE6C5",
+      braun: "#A07C54",
+      "braun-alt": "#8A7146",
+    },
+    fontFamily: {
+      raleway: ["Raleway", "sans-serif"],
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
