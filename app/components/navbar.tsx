@@ -2,10 +2,11 @@
 
 import Link from 'next/link'
 import { useState } from "react"
+import {usePathname} from "next/navigation";
 export function Navbar(){
-
     const [isMenuHide, setIsMenuHide] = useState(true)
 
+    const pathname = usePathname()
     function toggleBtnMenu() {
         if (isMenuHide) {
             setIsMenuHide(false)
@@ -21,27 +22,34 @@ export function Navbar(){
 
     return (
         <nav className="drop-shadow-xl bg-primary text-light flex justify-between sm:px-4">
-            <div className={`h-12 text-raleway font-black flex items-center ps-5 text-lg`}>
+            <div className={`h-12 text-raleway font-bold flex items-center ps-5 text-lg`}>
                 <Link className={`text-white border-e border-e-light border-e-1 pe-5`} href="/">ARCADIA ZOO</Link>
             </div>
             <ul id="ul-nav" className={isMenuHide ? `hidden ` : ``}>
-                <li>
-                    <Link onClick={closeMenuMobile} href="/">
+                <li className={`li-nav`}>
+                    <Link
+                        className={`link ${pathname === '/' ? 'active' : ''}`}
+                        onClick={closeMenuMobile}
+                        href="/"
+                    >
                         <span>Accueil</span>
                     </Link>
                 </li>
-                <li>
-                    <Link onClick={closeMenuMobile} href="/services">
+                <li className={`li-nav`}>
+                    <Link className={`link ${pathname === '/services' ? 'active' : ''}`} onClick={closeMenuMobile}
+                          href="/services">
                         <span>Services</span>
                     </Link>
                 </li>
-                <li>
-                    <Link onClick={closeMenuMobile} href="/habitats">
-                        <span>Animaux</span>
+                <li className={`li-nav`}>
+                    <Link className={`link ${pathname === '/habitats' ? 'active' : ''}`} onClick={closeMenuMobile}
+                          href="/habitats">
+                        <span>Habitats</span>
                     </Link>
                 </li>
-                <li>
-                    <Link onClick={closeMenuMobile} href="/contact">
+                <li className={`li-nav`}>
+                    <Link className={`link ${pathname === '/contact' ? 'active' : ''}`} onClick={closeMenuMobile}
+                          href="/contact">
                         <span>Contact</span>
                     </Link>
                 </li>

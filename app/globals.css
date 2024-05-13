@@ -14,21 +14,24 @@
     }
 }
 @layer components {
-
     #ul-nav {
-        @apply absolute top-12 bg-primary flex-col w-full justify-center justify-items-center md:flex md:static md:w-auto md:flex-row;
+        @apply absolute border-t border-t-light top-12 bg-primary flex-col w-full justify-center justify-items-center md:border-0 md:flex md:static md:w-auto md:flex-row;
     }
-    #ul-nav li {
+    .li-nav {
         @apply block flex items-center justify-center w-full h-12;
     }
-    #ul-nav li a{
+    .link{
         @apply uppercase font-semibold flex flex-row h-full w-full px-4 items-center justify-center text-white hover:bg-yellow-alt hover:text-dark;
     }
-    .ul-card{
-        @apply py-2;
+    .link.active{
+        @apply bg-yellow-alt text-dark;
     }
-    .ul-card li{
-        @apply text-center py-1;
+}
+@layer utilities{
+    .trait{
+        @apply w-[300px] mx-auto bg-braun h-1 mb-8 bg-opacity-20;
     }
-
+    .h1{
+        @apply uppercase text-light backdrop-brightness-50 bg-primary/30 p-5 text-3xl font-black lg:text-4xl;
+    }
 }
