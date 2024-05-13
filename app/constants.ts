@@ -61,19 +61,22 @@ export const ANIMALS_LIST = [
     {
         id:1,
         prenom: 'prenom 1',
-        race: 1,
+        img: '/img/ibis.webp',
+        race: 'Alligator',
         habitat: 'savane'
     },
     {
         id:2,
         prenom: 'prenom 2',
-        race: 2,
+        img: '/img/ibis.webp',
+        race: 'Crocodile',
         habitat: 'savane'
     },
     {
         id:3,
         prenom: 'prenom 3',
-        race: 2,
-        habitat: 'jungle'
+        img: '/img/ibis.webp',
+        race: "Eléphant d'asie",
+        habitat: "jungle"
     }
 ]
