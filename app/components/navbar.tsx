@@ -48,6 +48,12 @@ export function Navbar(){
                     </Link>
                 </li>
                 <li className={`li-nav`}>
+                    <Link className={`link ${pathname === '/avis' ? 'active' : ''}`} onClick={closeMenuMobile}
+                          href="/avis">
+                        <span>Avis</span>
+                    </Link>
+                </li>
+                <li className={`li-nav`}>
                     <Link className={`link ${pathname === '/contact' ? 'active' : ''}`} onClick={closeMenuMobile}
                           href="/contact">
                         <span>Contact</span>

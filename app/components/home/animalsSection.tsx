@@ -23,7 +23,7 @@ export function HomeAnimals(){
     return(
         <>
             <section className={`py-10 container mx-auto px-5`}>
-                <h2>LES ANIMAUX ET LEURS HABITATS</h2>
+                <h2 className={`h2`}>LES ANIMAUX ET LEURS HABITATS</h2>
                 <div className="trait"></div>
                 <div className="grid md:grid-cols-3 gap-5">
                     {animals.map((animal) => {
@@ -36,17 +36,17 @@ export function HomeAnimals(){
                         if (id === 1){
                             bg_class = 'bg-braun'
                             text_class = 'text-white'
-                            img = '/img/tigre.jpg'
+                            img = '/img/tigre.webp'
                             url = '/habitats/savane'
                         }else if(id === 2){
                             bg_class = 'bg-primary-alt'
                             text_class = 'text-light'
-                            img = '/img/ibis.jpg'
+                            img = '/img/ibis.webp'
                             url = '/habitats/marais'
                         }else if(id === 3){
                             bg_class = 'bg-yellow-alt'
                             text_class = 'text-dark'
-                            img = '/img/girafe.jpg'
+                            img = '/img/girafe.webp'
                             url = '/habitats/jungle'
                         }
                         return (

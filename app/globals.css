@@ -6,9 +6,6 @@
     body{
         @apply text-base text-dark bg-light;
     }
-    h2 {
-        @apply uppercase text-center mt-10 text-dark font-black font-raleway text-3xl mb-5;
-    }
     input, textarea{
         @apply text-dark p-2 focus:drop-shadow-none active:drop-shadow-none;
     }
@@ -45,6 +42,9 @@
     }
     .h1{
         @apply uppercase text-light backdrop-brightness-50 bg-primary/30 p-5 text-3xl font-black lg:text-4xl;
+    }
+    .h2 {
+        @apply uppercase text-center mt-10 text-dark font-black font-raleway text-3xl mb-5;
     }
     #footer h3{
         @apply text-center text-2xl text-white font-raleway uppercase font-bold mb-5;
