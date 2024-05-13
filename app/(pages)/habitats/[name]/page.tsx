@@ -1,26 +1,28 @@
 import {HABITATS_ITEMS} from "@/app/constants";
 import {Header} from "@/app/components/header";
 import {SelectHabitat} from "@/app/components/select-habitat";
-import Image from "next/image";
 
 export default function HabitatDetailPage(p: { params: {name: keyof typeof HABITATS_ITEMS } }){
-    const habitat = HABITATS_ITEMS[p.params.name];
-    const title = habitat.title
-    const img = habitat.image
-    const habitatName = habitat.name
-    const description = habitat.description
-    let classBgColor:string = 'bg-white'
-    let classColortext:string = 'text-light'
+    const habitat:{id:number,name:string, title:string, description:string, image:string} = HABITATS_ITEMS[p.params.name];
+    const title: string = habitat.title
+    const habitatName: string = habitat.name
+    const description: string = habitat.description
+    let classBgColor: string = 'bg-white'
+    let classColortext: string = 'text-light'
+    let classBgImage:string = ''
 
     if (habitatName === 'savane'){
         classBgColor = 'bg-braun'
         classColortext = 'text-light'
+        classBgImage = "bg-[url('/img/tigre.webp')]"
     } else if (habitatName === 'marais'){
         classBgColor = 'bg-primary-alt'
         classColortext = 'text-light'
+        classBgImage = "bg-[url('/img/ibis.webp')] "
     }else if (habitatName === 'jungle'){
         classBgColor = 'bg-yellow-alt'
         classColortext = 'text-dark'
+        classBgImage = "bg-[url('/img/girafe.webp')] "
     }
     return (
         <>
@@ -30,7 +32,8 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
                     <div className="basis-1/2 lg:basis-1/3">
                         <SelectHabitat/>
                         <div className={`bg-white drop-shadow-lg`}>
-                            <Image src={img} width={400} height={300} alt={title}/>
+                            <div className={`${classBgImage} bg-no-repeat bg-center bg-cover h-[200px]`}>
+                            </div>
                             <h2 className={`${classBgColor} ${classColortext} flex h-[50px] justify-center items-center uppercase text-2xl font-extrabold`}>
                                 {habitatName}
                             </h2>
@@ -39,8 +42,8 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
                             </p>
                         </div>
                     </div>
-                    <div className={`basis-1/2 lg:basis-2/3 flex flex-colel`}>
-                        <div className="bg-white p-5">
+                    <div className={`basis-1/2 lg:basis-2/3 flex flex-col w-full`}>
+                        <div className="bg-white p-5 w-full">
                             Habitat : {habitatName}
                         </div>
                     </div>
