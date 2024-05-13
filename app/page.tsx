@@ -7,6 +7,7 @@ export default function IndexPage() {
               className={`bg-[url('/img/elephant.jpg')] z-[-1] bg-no-repeat bg-center bg-cover relative w-full h-[300px] drop-shadow-lg md:bg-[url('/img/elephant-lg.jpg')]`}>
 
           </header>
+          <div className="container mx-auto p-5">
           <section className="my-10">
               <h1 className="uppercase text-center text-dark font-raleway text-3xl font-black text-center my-10">ARCADIA
                   ZOO</h1>
@@ -39,6 +40,7 @@ export default function IndexPage() {
 
               </div>
           </section>
+          </div>
       </>
   );
 }
