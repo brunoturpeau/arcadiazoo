@@ -66,7 +66,6 @@ export function HomeAnimals(){
                                             <li>{animal.liste[4]}</li>
                                             <li>{animal.liste[5]}</li>
                                             <li>{animal.liste[6]}</li>
-
                                         </ul>
                                     </div>
                                 </Link>

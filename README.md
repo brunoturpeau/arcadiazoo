@@ -8,5 +8,5 @@ Site vitrine du site Arcadia Zoo.
 
 - NextJS
 - React
-- TyprScript
+- TypeScript
 - Tailwindcss
