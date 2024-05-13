@@ -10,7 +10,7 @@ export default function IndexPage() {
   return (
       <>
           <header
-              className={`bg-[url('/img/elephant.jpg')] z-[-1] bg-no-repeat bg-center bg-cover relative w-full h-[300px] drop-shadow-lg md:bg-[url('/img/elephant-lg.jpg')]`}>
+              className={`bg-[url('/img/elephant.webp')] z-[-1] bg-no-repeat bg-center bg-cover relative w-full h-[300px] drop-shadow-lg md:bg-[url('/img/elephant-lg.webp')]`}>
           </header>
           <HomeAbout/>
           <HomeAnimals/>

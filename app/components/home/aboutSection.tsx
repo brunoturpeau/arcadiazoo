@@ -22,7 +22,7 @@ export function HomeAbout(){
                 <div className="text-center">
                     <Image
                         className="border-8 border-white shadow-2xl"
-                        src="/img/singe-bebe.jpg"
+                        src="/img/singe-bebe.webp"
                         width={800}
                         height={533}
                         alt="Singe"

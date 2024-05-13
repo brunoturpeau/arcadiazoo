@@ -36,17 +36,17 @@ export function HomeAnimals(){
                         if (id === 1){
                             bg_class = 'bg-braun'
                             text_class = 'text-white'
-                            img = '/img/tigre.jpg'
+                            img = '/img/tigre.webp'
                             url = '/habitats/savane'
                         }else if(id === 2){
                             bg_class = 'bg-primary-alt'
                             text_class = 'text-light'
-                            img = '/img/ibis.jpg'
+                            img = '/img/ibis.webp'
                             url = '/habitats/marais'
                         }else if(id === 3){
                             bg_class = 'bg-yellow-alt'
                             text_class = 'text-dark'
-                            img = '/img/girafe.jpg'
+                            img = '/img/girafe.webp'
                             url = '/habitats/jungle'
                         }
                         return (

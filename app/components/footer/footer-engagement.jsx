@@ -23,10 +23,10 @@ export default function FooterEngagement() {
             <p className={`lg:px-10`}>Arcadia Zoo est membre de l&apos;EAZA, et de BEAG</p>
             <div className="flex justify-center gap-10 my-6">
                 <Link href={`https://www.eaza.net/`} title={`Voir le site EAZA`} target={`_blank`}>
-                    <Image src={`/img/logo_eaza.png`} alt={`Logo EAZA`} width={60} height={60}/>
+                    <Image src={`/img/logo_eaza.webp`} alt={`Logo EAZA`} width={60} height={60}/>
                 </Link>
                 <Link href={`https://beag-certification.fr/`} title={`Voir le site BEAG`} target={`_blank`}>
-                    <Image src={`/img/logo_beag.png`} alt={`Logo EAZA`} width={60} height={60}/>
+                    <Image src={`/img/logo_beag.webp`} alt={`Logo EAZA`} width={60} height={60}/>
                 </Link>
             </div>
             <p className={`lg:px-10`}>Ensemble, agissons pour préserver notre biodiversité !</p>

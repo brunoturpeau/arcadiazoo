@@ -25,20 +25,20 @@ export const HABITATS_ITEMS = {
         name: "savane",
         title: "Les animaux de la savane",
         description: "Lorem ipsum",
-        image: "/img/tigre.jpg"
+        image: "/img/tigre.webp"
     },
     marais: {
         id: 2,
         name: "marais",
         title: "Les animaux du marais",
         description: "Lorem ipsum",
-        image: "/img/ibis.jpg"
+        image: "/img/ibis.webp"
     },
     jungle: {
         id: 3,
         name: "jungle",
         title: "Les animaux de la jungle",
         description: "Lorem ipsum jungle",
-        image: "/img/girafe.jpg"
+        image: "/img/girafe.webp"
     }
 }

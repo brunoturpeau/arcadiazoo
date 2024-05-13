@@ -24,7 +24,7 @@ export function Footer(){
                 <span> - </span>
                 <Link
                     className={`mx-1 hover:underline`}
-                    href={`credits-photos`}
+                    href={`/credits-photos`}
                     title={`Voir les crédits photos`}>
                     Crédits photos
                 </Link>
