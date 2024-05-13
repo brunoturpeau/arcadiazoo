@@ -24,21 +24,21 @@ export const HABITATS_ITEMS = {
         id: 1,
         name: "savane",
         title: "Les animaux de la savane",
-        description: "Lorem ipsum",
+        description: "La savane africaine, reconstitution souvent vue en zoos, abrite une multitude d'espèces emblématiques. Lions majestueux, éléphants imposants, girafes gracieuses, zèbres rayés, rhinocéros massifs, guépards rapides et hyènes rusées évoquent un monde sauvage captivant, offrant aux visiteurs une immersion unique dans la beauté et la diversité de la nature africaine.",
         image: "/img/tigre.webp"
     },
     marais: {
         id: 2,
         name: "marais",
         title: "Les animaux du marais",
-        description: "Lorem ipsum",
+        description: "Les marais abritent une biodiversité unique, souvent recréée dans les zoos. Crocodiles furtifs, alligators solitaires, tortues aquatiques, serpents glissants, grenouilles colorées et hérons élégants évoquent un écosystème vibrant. Ces créatures captivantes offrent aux visiteurs une exploration immersive des habitats humides et de leur fascinante faune.",
         image: "/img/ibis.webp"
     },
     jungle: {
         id: 3,
         name: "jungle",
         title: "Les animaux de la jungle",
-        description: "Lorem ipsum jungle",
+        description: "La jungle, source d'émerveillement, trouve son reflet dans les zoos. Lions rugissants, tigres rayés, singes espiègles, serpents sinueux, perroquets colorés et toucans exotiques évoquent une biodiversité luxuriante. Ces ambassadeurs de la jungle offrent aux visiteurs une immersion palpitante dans les mystères et la splendeur de ces habitats tropicaux.",
         image: "/img/girafe.webp"
     }
 }

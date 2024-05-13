@@ -23,7 +23,7 @@ export function HomeAnimals(){
     return(
         <>
             <section className={`py-10 container mx-auto px-5`}>
-                <h2>LES ANIMAUX ET LEURS HABITATS</h2>
+                <h2 className={`h2`}>LES ANIMAUX ET LEURS HABITATS</h2>
                 <div className="trait"></div>
                 <div className="grid md:grid-cols-3 gap-5">
                     {animals.map((animal) => {

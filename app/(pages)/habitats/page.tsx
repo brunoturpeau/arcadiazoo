@@ -7,7 +7,7 @@ export default  function Habitats(){
     return (
         <>
             <Header title={`Les habitats`} />
-            <h2>Sélectionnez un habitat</h2>
+            <h2 className={`h2`}>Sélectionnez un habitat</h2>
             <div className="trait"></div>
             <section className="container mx-auto p-5 pt-10 pb-20 text-center grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div className={`shadow-2xl hover:scale-105`}>

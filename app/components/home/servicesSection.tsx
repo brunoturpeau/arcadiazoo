@@ -26,7 +26,7 @@ export function HomeServices() {
 
     return (
         <section className={`pb-10 container mx-auto px-5`}>
-            <h2>NOS SERVICES</h2>
+            <h2 className={`h2`}>NOS SERVICES</h2>
             <div className="trait"></div>
             <div className="grid md:grid-cols-3 gap-5">
                 {services.map((service) => {

@@ -6,7 +6,7 @@ export function HomeComments(){
 const comments = COMMENTS_LIST
     return (
         <section className={`pb-10 container mx-auto px-5`}>
-            <h2>Vos commentaires</h2>
+            <h2 className={`h2`}>Vos commentaires</h2>
             <div className="trait"></div>
             <div className="flex flex-col gap-5 lg:w-[800px] mx-auto">
                 {comments.map((comment) => {
