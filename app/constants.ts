@@ -18,3 +18,27 @@ export const COMMENTS_LIST = [
         date: '10/08/2024'
     },
 ]
+
+export const HABITATS_ITEMS = {
+    savane: {
+        id: 1,
+        name: "savane",
+        title: "Les animaux de la savane",
+        description: "Lorem ipsum",
+        image: "/img/tigre.jpg"
+    },
+    marais: {
+        id: 2,
+        name: "marais",
+        title: "Les animaux du marais",
+        description: "Lorem ipsum",
+        image: "/img/ibis.jpg"
+    },
+    jungle: {
+        id: 3,
+        name: "jungle",
+        title: "Les animaux de la jungle",
+        description: "Lorem ipsum jungle",
+        image: "/img/girafe.jpg"
+    }
+}
