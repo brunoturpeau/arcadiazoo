@@ -46,4 +46,10 @@
     .h1{
         @apply uppercase text-light backdrop-brightness-50 bg-primary/30 p-5 text-3xl font-black lg:text-4xl;
     }
+    #footer h3{
+        @apply text-center text-2xl text-white font-raleway uppercase font-bold mb-5;
+    }
+    #footer .trait{
+        @apply bg-light w-1/2 mx-auto h-[1px] opacity-50;
+    }
 }
