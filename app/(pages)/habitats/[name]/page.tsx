@@ -1,4 +1,4 @@
-import {HABITATS_ITEMS} from "@/app/constants";
+import {ANIMALS_LIST, HABITATS_ITEMS} from "@/app/constants";
 import {Header} from "@/app/components/header";
 import {SelectHabitat} from "@/app/components/select-habitat";
 
@@ -10,6 +10,7 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
     let classBgColor: string = 'bg-white'
     let classColortext: string = 'text-light'
     let classBgImage:string = ''
+
 
     if (habitatName === 'savane'){
         classBgColor = 'bg-braun'
@@ -45,6 +46,17 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
                     <div className={`basis-1/2 lg:basis-2/3 flex flex-col w-full`}>
                         <div className="bg-white p-5 w-full">
                             Habitat : {habitatName}
+                            {
+                                ANIMALS_LIST.map((animal)=>{
+
+                                if (animal.habitat === habitatName){
+                                    return (
+                                        <div key={animal.id}>
+                                            {animal.prenom}
+                                        </div>
+                                    )
+                                }
+                            })}
                         </div>
                     </div>
                 </div>

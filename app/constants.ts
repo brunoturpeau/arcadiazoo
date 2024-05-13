@@ -1,3 +1,5 @@
+import {fdatasync} from "node:fs";
+
 export const COMMENTS_LIST = [
     {
         id: '1',
@@ -42,3 +44,36 @@ export const HABITATS_ITEMS = {
         image: "/img/girafe.webp"
     }
 }
+
+
+export const RACES_LIST = [
+    {
+        id:1,
+        race: "Crocodile",
+    },
+    {
+        id:2,
+        race: "Alligator",
+    }
+]
+
+export const ANIMALS_LIST = [
+    {
+        id:1,
+        prenom: 'prenom 1',
+        race: 1,
+        habitat: 'savane'
+    },
+    {
+        id:2,
+        prenom: 'prenom 2',
+        race: 2,
+        habitat: 'savane'
+    },
+    {
+        id:3,
+        prenom: 'prenom 3',
+        race: 2,
+        habitat: 'jungle'
+    }
+]
