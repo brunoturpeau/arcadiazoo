@@ -26,6 +26,15 @@
     .link.active{
         @apply bg-yellow-alt text-dark;
     }
+    .card{
+        @apply shadow-2xl transform transition ease-in-out delay-100 hover:shadow-none hover:scale-105;
+    }
+    .ul-card{
+        @apply py-2;
+    }
+    .ul-card li{
+        @apply text-center py-1;
+    }
 }
 @layer utilities{
     .trait{
