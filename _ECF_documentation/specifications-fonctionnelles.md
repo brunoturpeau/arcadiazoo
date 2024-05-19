@@ -16,23 +16,17 @@
 
 ## Fonctionnalités backend
 
-### ADMINISTRATEUR
+- [Administrateur] - Gérer les services
+- [Administrateur] - Gérer les habitats
+- [Administrateur] - Gérer les animaux
+- [Administrateur] - Gérer les horaires
+- [Administrateur] - Gérer les comptes utilisateurs
+- [Administrateur] - Voir les statistiques popularité animaux
 
-- Gérer les services
-- Gérer les habitats
-- Gérer les animaux
-- Gérer les horaires
-- Gérer les comptes utilisateurs
-- Voir les statistiques popularité animaux
+- [Employe] - Gérer les avis
+- [Employe] - Gérer la nourriture donnée aux animaux
+- [Employe] - Modifier les services
 
-### EMPLOYE
-
-- Gérer les avis
-- Gérer la nourriture donnée aux animaux
-- Modifier les services
-
-### VETERINAIRE
-
-- Gérer les comptes-rendu vétérinaire
-- Gérer les commentaires sur les habitats
+- [Veterinaire] - Gérer les comptes-rendu vétérinaire
+- [Veterinaire] - Gérer les commentaires sur les habitats
 

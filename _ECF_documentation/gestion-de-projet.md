@@ -1,6 +1,8 @@
 # Gestion de projet
 
-Plateforme de gestion de projet: JIRA
+## Plateforme de gestion de projet
+
+JIRA
 Méthode : AGILE
 
 ## Workflow
