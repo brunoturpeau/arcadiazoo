@@ -10,6 +10,8 @@ Site vitrine du site Arcadia Zoo.
     
   - 1.1 Présentation de l'application
   - 1.2 Identifiants de test
+  - 1.3 Installation du Backend
+  - 1.4 Installation du Frontend
 
 - 2 [Gestion de projet](https://github.com/brunoturpeau/arcadiazoo/blob/main/_ECF_documentation/gestion-de-projet.md)
 
@@ -39,5 +41,5 @@ Site vitrine du site Arcadia Zoo.
     - 5.1 Arborescence du projet
     - 5.2 Fonctionnalités frontend
     - 5.3 Fonctionnalités backend
-    - 5.4 Tests
+  
 
