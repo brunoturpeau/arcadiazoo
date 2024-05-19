@@ -106,49 +106,25 @@ Le graphisme du site doit retranscrire les valeurs écologiques du zoo.
 
 <img src="img/charte-graphique.jpg" />
 
-### 3.3. Wireframes
+### 3.3. Wireframe
 
-#### 3.3.1. Mobile
-
-<img src="img/wireframe/mobile.png" />
-
-#### 3.3.2 Home Desktop
+#### 3.3.1. Wireframe desktop - Page d'accueil
 
 <img src="img/wireframe/accueil-desktop.png" />
 
-#### 3.3.3 Habitats Desktop
+#### 3.3.2 - Autres wireframes
 
-<img src="img/wireframe/habitats-desktop.png" />
-
-#### 3.3.4 Animaux Desktop
-
-<img src="img/wireframe/animaux-desktop.png" />
-
-#### 3.3.5 Animaux Détail Desktop
-
-<img src="img/wireframe/Animaux détails - Desktop.png" />
+Annexes 1 à 5
 
 ### 3.4. Mockup
 
-#### 3.4.1. Accueil Desktop
+#### 3.4.1. Mockup desktop - Page d'accueil
 
 <img src="img/mockup/accueil-desktop.png" />
 
-#### 3.4.2. Habitats Desktop
+#### 3.4.1. Autres Mockup
 
-<img src="img/mockup/habitats-desktop.png" />
-
-#### 3.4.3. Animaux Desktop
-
-<img src="img/mockup/animaux-desktop.png" />
-
-#### 3.4.5. Animaux Détail Mobile
-
-<img src="img/mockup/animaux-desktop-detail.png" />
-
-#### 6.4.6. Mockup mobile
-
-<img src="img/mockup/mobile.png" />
+Annexes 6 à 9
 
 ## 4. Spécifications fonctionnelles
 
@@ -254,3 +230,41 @@ L’accès aux comptes d’administration est limité aux 3 rôles suivants :
 > Décrivez une situation de travail ayant nécessité une recherche durant le projet à partir de site anglophone. N’oubliez pas de citer la source
 
 Mentionnez l’extrait du site anglophone qui vous a aidé dans la question précédente en effectuant une traduction en français.
+
+## 7. Annexes
+
+### Annexe 1 - Wireframe mobile - page d'accueil
+
+<img src="img/wireframe/mobile.png" />
+
+### Annexe 2 - Wireframe desktop - page d'accueil
+
+<img src="img/wireframe/accueil-desktop.png" />
+
+### Annexe 3 - Wireframe desktop - page habitats
+
+<img src="img/wireframe/habitats-desktop.png" />
+
+### Annexe 4 - Wireframe desktop - page animaux
+
+<img src="img/wireframe/animaux-desktop.png" />
+
+### Annexe 5 - Wireframe desktop - page détail animaux
+
+<img src="img/wireframe/Animaux détails - Desktop.png" />
+
+### Annexe 6 - Mockup desktop - page habitats
+
+<img src="img/mockup/habitats-desktop.png" />
+
+### Annexe 7 - Mockup desktop - page animaux
+
+<img src="img/mockup/animaux-desktop.png" />
+
+### Annexe 8 - Mockup desktop - page détail animaux
+
+<img src="img/mockup/animaux-desktop-detail.png" />
+
+### Annexe 9 - Mockup mobile - 4 pages
+
+<img src="img/mockup/mobile.png" />
