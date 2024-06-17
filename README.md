@@ -8,7 +8,3 @@ Préparation au Titre Professionnel
 ## Le projet
 
 Site vitrine du zoo Arcadia.
-
-## La documentation
-
-[DOCUMENTATION](https://github.com/brunoturpeau/arcadiazoo_documentation)
