@@ -2,7 +2,6 @@
 
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-import DOMPurify from 'dompurify'
 
 export const ContactUs = () => {
     const form = useRef();
@@ -20,6 +19,26 @@ export const ContactUs = () => {
             setStatusName('valid')
         } else {
             setStatusName('invalid')
+        }
+    }
+
+    function handleEmailChange(e) {
+        const value = e.target.value
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        if (value.match(emailRegex)) {
+            setStatusEmail('valid')
+        } else {
+            setStatusEmail('invalid')
+        }
+    }
+
+    function handleMessageChange(e) {
+        const value = e.target.value
+        console.log('value', value)
+        if (value !== '') {
+            setStatusMessage('valid')
+        } else {
+            setStatusMessage('invalid')
         }
     }
 
@@ -46,7 +65,6 @@ export const ContactUs = () => {
             setSending('error')
             setMsg('Une erreur est survenue !')
         }
-
     }
 
     return (
@@ -63,7 +81,7 @@ export const ContactUs = () => {
                     placeholder="Renseignez votre nom et votre prénom" required
                 />
                 <p
-                    className={`text-[#ef4444] mb-5 text-sm ${statusName == 'invalid' ? '' : 'hidden' }`}
+                    className={`text-[#ef4444] mb-5 text-sm ${statusName == 'invalid' ? '' : 'hidden'}`}
                 >
                     Le champ nom doit contenir entre 3 et 30 caractères
                 </p>
@@ -71,17 +89,33 @@ export const ContactUs = () => {
                     Votre adresse email
                 </label>
                 <input
-                    className={`mb-3`}
+                    className={`mb-3 ${statusEmail == 'valid' ? 'bg-success ' : ''} ${statusEmail == 'invalid' ? 'bg-danger ' : ''}`}
+                    onChange={handleEmailChange}
                     placeholder="exemple@email.com" required
                     type="email"
                     name="user_email"
                 />
+                <p
+                    className={`text-[#ef4444] mb-5 text-sm ${statusEmail == 'invalid' ? '' : 'hidden'}`}
+                >
+                    L&apos;adresse email n&apos;est pas valide
+                </p>
                 <label className={`mb-1`}>Votre message</label>
-                <textarea className={`mb-10`} name="message"/>
+                <textarea
+                    className={`mb-3 ${statusMessage == 'valid' ? 'bg-success' : ''} ${statusMessage == 'invalid' ? 'bg-danger' : ''}`}
+                    onChange={handleMessageChange}
+                    name="message"
+                    required
+                />
+                <p
+                    className={`text-[#ef4444] mb-5 text-sm ${ statusMessage == 'invalid' ? '' : 'hidden'}`}
+                >
+                    Le champ message ne doit pas être vide.
+                </p>
                 <div className="flex">
-                    <input className={`btn-primary w-[150px]`} type="submit" value="Envoyer"/>
+                    <input className={`btn-primary w-[150px] mt-5`} type="submit" value="Envoyer"/>
                 </div>
-                <div className={`mt-5 p-5 rounded-md ${sending == 'sent' ? 'bg-yellow-alt text-primary-dark' : ''} `}>
+                <div className={`mt-5 p-5 rounded-md text-primary-dark ${sending == 'sent' ? 'bg-success' : ''} ${sending == 'error' ? 'bg-danger' : ''} `}>
                     {msg}
                 </div>
             </form>
