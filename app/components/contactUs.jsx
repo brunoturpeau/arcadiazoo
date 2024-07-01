@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import DOMPurify from 'dompurify'
 
 export const ContactUs = () => {
     const form = useRef();
@@ -14,7 +15,12 @@ export const ContactUs = () => {
     const [sending, setSending] = useState('')
     const [msg, setMsg] = useState('')
 
-
+    function handleNameChange(e) {
+        const value = e.target.value
+        const cleanHTML = DOMPurify.sanitize(value)
+        setContentName(cleanHTML)
+        validateName()
+    }
     const sendEmail = (e) => {
         e.preventDefault()
 
