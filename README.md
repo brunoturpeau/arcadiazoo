@@ -8,15 +8,15 @@ L'application est développée avec Next.js et React et consomme une API Rest ex
 
 [https://arcadiazoo-alpha.vercel.app/](https://arcadiazoo-alpha.vercel.app/)
 
-## [Documentation](https://github.com/brunoturpeau/arcadiazoo/documentation)
+## [Documentation](https://github.com/brunoturpeau/arcadiazoo/tree/main/documentation)
 
-- [gestion_de_projet.pdf](https://github.com/brunoturpeau/arcadiazoo/documentation/gestion_de_projet.pdf)
-- [specifications_fonctionnelles.pdf](https://github.com/brunoturpeau/arcadiazoo/documentation/specifications_fonctionnelles.pdf)
-- [conception_graphique.pdf](https://github.com/brunoturpeau/arcadiazoo/documentation/conception_graphique.pdf)
-- [documentation_technique.pdf](https://github.com/brunoturpeau/arcadiazoo/documentation/documentation_technique.pdf)
+- [gestion_de_projet.pdf](https://github.com/brunoturpeau/arcadiazoo/tree/main/documentation/gestion_de_projet.pdf)
+- [specifications_fonctionnelles.pdf](https://github.com/brunoturpeau/arcadiazoo/tree/main/documentation/specifications_fonctionnelles.pdf)
+- [conception_graphique.pdf](https://github.com/brunoturpeau/arcadiazoo/tree/main/documentation/conception_graphique.pdf)
+- [documentation_technique.pdf](https://github.com/brunoturpeau/arcadiazoo/tree/main/documentation/documentation_technique.pdf)
 
-- [manuel_d_utilisation.pdf](https://github.com/brunoturpeau/arcadiazoo/documentation/manuel_d_utilisation.pdf)
-- [base_de_donnees_arcadia.sql](https://github.com/brunoturpeau/arcadiazoo/documentation/base_de_donnees_arcadia.sql)
+- [manuel_d_utilisation.pdf](https://github.com/brunoturpeau/arcadiazoo/tree/main/documentation/manuel_d_utilisation.pdf)
+- [base_de_donnees_arcadia.sql](https://github.com/brunoturpeau/arcadiazoo/tree/main/documentation/base_de_donnees_arcadia.sql)
 
 
 
