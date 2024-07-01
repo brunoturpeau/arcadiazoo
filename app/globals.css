@@ -12,7 +12,7 @@
 }
 @layer components {
     .btn-primary{
-        @apply uppercase mt-5 md:mt-0 bg-primary-alt text-white p-4 font-semibold drop-shadow-lg hover:scale-105;
+        @apply uppercase mx-auto mt-5 md:mt-0 bg-primary-alt text-white py-3 px-4 font-semibold drop-shadow-lg hover:scale-105 hover:cursor-pointer hover:bg-primary;
     }
     #ul-nav {
         @apply absolute border-t border-t-light top-12 bg-primary flex-col w-full justify-center justify-items-center md:border-0 md:flex md:static md:w-auto md:flex-row;
