@@ -3,7 +3,6 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: [
     "./app/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -22,6 +21,8 @@ const config: Config = {
       light: "#EFE6C5",
       braun: "#A07C54",
       "braun-alt": "#8A7146",
+      danger : "#FBC4C0",
+      success : "#DEF99E",
     },
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],
