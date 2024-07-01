@@ -21,6 +21,8 @@ const config: Config = {
       light: "#EFE6C5",
       braun: "#A07C54",
       "braun-alt": "#8A7146",
+      danger : "#FBC4C0",
+      success : "#DEF99E",
     },
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],

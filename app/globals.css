@@ -9,6 +9,15 @@
     input, textarea{
         @apply text-dark p-2 focus:drop-shadow-none active:drop-shadow-none;
     }
+
+    form {
+        @apply max-w-md mx-auto;
+
+        input,
+        textarea {
+            @apply bg-white block w-full p-2.5;
+        }
+    }
 }
 @layer components {
     .btn-primary{

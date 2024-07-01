@@ -1,4 +1,7 @@
 
+-- Création de la base de données
+CREATE DATABASE sf_arcadiazoo;
+
 -- Structure de la table animal
 CREATE TABLE animal (
     id int NOT NULL AUTO_INCREMENT,
