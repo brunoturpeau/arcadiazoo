@@ -5,7 +5,6 @@ import { useState } from "react"
 import {usePathname} from "next/navigation";
 export function Navbar(){
     const [isMenuHide, setIsMenuHide] = useState(true)
-
     const pathname = usePathname()
     function toggleBtnMenu() {
         if (isMenuHide) {
