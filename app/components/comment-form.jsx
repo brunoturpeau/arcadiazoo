@@ -8,6 +8,7 @@ export const CommentForm = () => {
     const [contentPseudo, setContentPseudo] = useState('')
     const [contentMessage, setContentMessage] = useState('')
     const [msg, setMsg] = useState('')
+    const [statusSend, setStatusSend] = useState('')
 
 
     function handlePseudoChange(e) {
@@ -37,11 +38,12 @@ export const CommentForm = () => {
         e.preventDefault()
         confirm('Envoi du commentaire de ' + contentPseudo + ' - Contenu : ' + contentMessage )
         setMsg('Votre commentaire a été envoyé avec succès !')
+        setStatusSend('sent')
     }
 
     return (
         <form onSubmit={sendComment}>
-            <div className={`mt-5 p-5 rounded-md text-primary-dark bg-success`}>
+            <div className={`mt-5 p-5 rounded-md text-primary-dark bg-success ${ statusSend === 'sent' ? '' : 'hidden'} `}>
                 {msg}
             </div>
             <label className={`block mt-10 mb-2`} htmlFor="pseudo">Pseudo</label>
