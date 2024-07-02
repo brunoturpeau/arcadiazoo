@@ -1,10 +1,14 @@
 'use client'
 import { useState } from 'react'
+import DOMPurify from 'dompurify'
+
 export const CommentForm = () => {
     const [statusPseudo, setStatusPseudo] = useState(null)
     const [statusMessage, setStatusMessage] = useState(null)
     const [contentPseudo, setContentPseudo] = useState('')
     const [contentMessage, setContentMessage] = useState('')
+    const [msg, setMsg] = useState('')
+
 
     function handlePseudoChange(e) {
         const value = e.target.value
@@ -12,7 +16,8 @@ export const CommentForm = () => {
 
         if (valueLenght > 2 && valueLenght < 21) {
             setStatusPseudo('valid')
-            setContentPseudo(value)
+            const cleanPseudoHTML = DOMPurify.sanitize(value)
+            setContentPseudo(cleanPseudoHTML)
         } else {
             setStatusPseudo('invalid')
         }
@@ -22,18 +27,23 @@ export const CommentForm = () => {
         const value = e.target.value
         if (value !== '') {
             setStatusMessage('valid')
-            setContentMessage(contentMessage)
+            const cleanMessageHTML = DOMPurify.sanitize(value)
+            setContentMessage(cleanMessageHTML)
         } else {
             setStatusMessage('invalid')
         }
     }
     function sendComment(e){
         e.preventDefault()
-        confirm('Envoi du commentaire de ' + contentPseudo )
+        confirm('Envoi du commentaire de ' + contentPseudo + ' - Contenu : ' + contentMessage )
+        setMsg('Votre commentaire a été envoyé avec succès !')
     }
 
     return (
         <form onSubmit={sendComment}>
+            <div className={`mt-5 p-5 rounded-md text-primary-dark bg-success`}>
+                {msg}
+            </div>
             <label className={`block mt-10 mb-2`} htmlFor="pseudo">Pseudo</label>
             <input
                 name={`pseudo`}
@@ -65,6 +75,7 @@ export const CommentForm = () => {
             <div className="text-center mt-5">
                 <button className={`btn-primary`}>Envoyer</button>
             </div>
+
         </form>
     )
 }
