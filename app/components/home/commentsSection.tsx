@@ -3,13 +3,13 @@ import {COMMENTS_LIST} from "@/app/constants";
 
 
 export function HomeComments(){
-const comments = COMMENTS_LIST
+const comments: {id: number, pseudo: string, comment: string, date: string}[] = COMMENTS_LIST
     return (
         <section className={`pb-10 container mx-auto px-5`}>
             <h2 className={`h2`}>Vos commentaires</h2>
             <div className="trait"></div>
             <div className="flex flex-col gap-5 lg:w-[800px] mx-auto">
-                {comments.map((comment) => {
+                {comments.map((comment: {id: number, pseudo: string, comment: string, date: string}) => {
                     return (
                         <div key={comment.id}
                              className={`bg-white drop-shadow-lg border-s-braun-alt border-s-4 p-4 pt-2`}>
@@ -40,8 +40,8 @@ const comments = COMMENTS_LIST
                 })}
             </div>
             <div className="text-center">
-                <button className={`btn-primary mt-10`}>
-                    <Link href={`/avis`} title={`Voir tous les avis`}>
+                <button className={`mt-10`}>
+                    <Link className={`btn-primary`} href={`/avis`} title={`Voir tous les avis`}>
                         Plus de commentaires
                     </Link>
                 </button>

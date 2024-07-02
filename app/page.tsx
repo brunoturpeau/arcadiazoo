@@ -1,10 +1,10 @@
-import Image from "next/image";
-import {HomeAnimals} from "@/app/components/home/animalsSection";
-import {CTAAnimals} from "@/app/components/home/animalsCTA";
-import {HomeServices} from "@/app/components/home/servicesSection";
-import {CTAServices} from "@/app/components/home/servicesCTA";
-import {HomeComments} from "@/app/components/home/commentsSection";
-import {HomeAbout} from "@/app/components/home/aboutSection";
+import Image from "next/image"
+import {HomeAnimals} from "@/app/components/home/animalsSection"
+import {CTAAnimals} from "@/app/components/home/animalsCTA"
+import {HomeServices} from "@/app/components/home/servicesSection"
+import {CTAServices} from "@/app/components/home/servicesCTA"
+import {HomeComments} from "@/app/components/home/commentsSection"
+import {HomeAbout} from "@/app/components/home/aboutSection"
 
 export default function IndexPage() {
   return (
@@ -19,5 +19,5 @@ export default function IndexPage() {
           <CTAServices/>
           <HomeComments/>
       </>
-  );
+  )
 }

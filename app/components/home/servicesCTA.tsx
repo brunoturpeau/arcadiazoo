@@ -8,11 +8,9 @@ export function CTAServices(){
                     Profitez des services organisés par Arcadia Zoo et passez des moments inoubliables
                 </div>
                 <div className="basis-1/4 text-center">
-                    <button className={`btn-primary`}>
-                        <Link href={`/services`} title={`Voir tous les services`}>
-                            Voir les services
-                        </Link>
-                    </button>
+                    <Link className={`btn-primary`} href={`/services`} title={`Voir tous les services`}>
+                        Voir les services
+                    </Link>
                 </div>
             </div>
         </section>

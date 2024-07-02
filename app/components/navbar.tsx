@@ -35,7 +35,8 @@ export function Navbar(){
                     </Link>
                 </li>
                 <li className={`li-nav`}>
-                    <Link className={`link ${pathname === '/services' ? 'active' : ''}`} onClick={closeMenuMobile}
+                    <Link className={`link ${pathname === '/services' ? 'active' : ''}`}
+                          onClick={closeMenuMobile}
                           href="/services">
                         <span>Services</span>
                     </Link>
@@ -43,13 +44,13 @@ export function Navbar(){
                 <li className={`li-nav`}>
                     <Link className={`link ${pathname === '/habitats' ? 'active' : ''}`} onClick={closeMenuMobile}
                           href="/habitats">
-                        <span>Habitats</span>
+                        <span>Animaux</span>
                     </Link>
                 </li>
                 <li className={`li-nav`}>
                     <Link className={`link ${pathname === '/avis' ? 'active' : ''}`} onClick={closeMenuMobile}
                           href="/avis">
-                        <span>Avis</span>
+                        <span>Commentaires</span>
                     </Link>
                 </li>
                 <li className={`li-nav`}>

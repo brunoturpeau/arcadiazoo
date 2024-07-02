@@ -1,6 +1,6 @@
-import "./globals.css";
-import {Navbar} from "@/app/components/navbar";
-import {Footer} from "@/app/components/footer/footer";
+import "./globals.css"
+import {Navbar} from "@/app/components/navbar"
+import {Footer} from "@/app/components/footer/footer"
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -8,12 +8,12 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en">
+    <html lang="fr">
       <body>
-      <Navbar />
-      {children}
-      <Footer />
+          <Navbar />
+          {children}
+          <Footer />
       </body>
     </html>
-  );
+  )
 }
