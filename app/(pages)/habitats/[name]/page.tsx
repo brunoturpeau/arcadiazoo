@@ -23,7 +23,7 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
     }else if (habitatName === 'jungle'){
         classBgColor = 'bg-yellow-alt'
         classColortext = 'text-dark'
-        classBgImage = "bg-[url('/img/girafe.webp')] "
+        classBgImage = "bg-[url('/img/jungle.png')] "
     }
     return (
         <>
@@ -45,11 +45,11 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
                     </div>
                     <div className={`basis-1/2 lg:basis-2/3 flex flex-col w-full`}>
                         <div className="w-full px-5 pb-10">
-                            {ANIMALS_LIST.map((animal)=>{
+                            {ANIMALS_LIST.map((animal : {id: number, prenom: string, img: string[], race: string, habitat: string, description: string, health: string})=>{
                                 if (animal.habitat === habitatName){
                                     return (
                                         <div className={`bg-white flex justify-between mb-5 drop-shadow-lg`} key={animal.id}>
-                                            <Image src={animal.img} alt="" width={150} height={150}/>
+                                            <Image src={animal.img[0]} alt="" width={150} height={150}/>
                                             <div className={`flex flex-col w-full justify-center ps-10`}>
                                                 <h2 className={`text-2xl capitalize`}>
                                                     {animal.prenom}

@@ -1,5 +1,5 @@
 import {Header} from "@/app/components/header"
-import {SERVICES_LIST} from "@/app/constants";
+import {SERVICES_LIST} from "@/app/constants"
 
 export default function ServicesPage(){
     const services : {id: number, name: string, content: string}[] = SERVICES_LIST

@@ -20,7 +20,6 @@ export const COMMENTS_LIST : {id: number, pseudo: string, comment: string, date:
     },
 ]
 
-
 export const SERVICES_LIST : {id: number, name: string, content: string}[] = [
     {
         id: 1,
@@ -43,7 +42,6 @@ export const SERVICES_LIST : {id: number, name: string, content: string}[] = [
         content: "Le zoo propose un spectacle d’otaries captivant, à ne pas manquer, se déroulant à 11h00, 15h00 et 17h00 chaque jour. Ces charmantes créatures marines exécutent des tours impressionnants, alliant acrobaties et jeux d’adresse, pour le plus grand plaisir des spectateurs. Le spectacle est une expérience éducative et divertissante, mettant en valeur l’intelligence et la grâce des otaries tout en sensibilisant à la conservation des espèces marines.",
     },
 ]
-
 
 export const HABITATS_ITEMS = {
     savane: {
@@ -69,27 +67,166 @@ export const HABITATS_ITEMS = {
     }
 }
 
-export const ANIMALS_LIST = [
+export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: string, habitat: string, description: string, health: string}[] = [
     {
         id:1,
-        prenom: 'prenom 1',
-        img: '/img/ibis.webp',
-        race: 'Alligator',
-        habitat: 'savane'
+        prenom: 'Adèle ',
+        img: [
+            '/img/animaux/mini/300x300-7d1863aa6303a073b2408bec7f28e14f.webp',
+            '/img/animaux/mini/300x300-d3c529b8f0a6ea3ca760f55c28ab48e8.webp',
+            '/img/animaux/mini/300x300-e334f7cc7b802e0471469180e56caddb.webp',
+            '/img/animaux/mini/300x300-f5e2f08d020304546c7284c1199559ba.webp',
+        ],
+        race: 'Girafe',
+        habitat: 'savane',
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
     },
     {
         id:2,
-        prenom: 'prenom 2',
-        img: '/img/ibis.webp',
-        race: 'Crocodile',
-        habitat: 'savane'
+        prenom: 'Ceros',
+        img: [
+            '/img/animaux/mini/300x300-0d10b57d0df21d5f9dfa5989ed480090.webp',
+        ],
+        race: 'Rhinocéros blanc',
+        habitat: 'jungle',
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
     },
     {
         id:3,
-        prenom: 'prenom 3',
-        img: '/img/ibis.webp',
-        race: "Eléphant d'asie",
-        habitat: "jungle"
-    }
+        prenom: 'Dundy',
+        img: [
+            '/img/animaux/mini/300x300-3b9d1008ecdcc0c09046a15b70c62eea.webp',
+            '/img/animaux/mini/300x300-5acd69f31f284d71d861a9f688351c84.webp',
+            '/img/animaux/mini/300x300-da5d45d55c96d92e986268290aa497da.webp',
+        ],
+        race: "Crocodile",
+        habitat: "marais",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:4,
+        prenom: 'Sheila',
+        img: [
+            '/img/animaux/mini/300x300-95ed91fc9b6097d19dcd40369d9bf40d.webp',
+            '/img/animaux/mini/300x300-aed5b0223b5fb972266e0fabd642c279.webp',
+        ],
+        race: "Lion",
+        habitat: "savane",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:5,
+        prenom: 'Simba',
+        img: [
+            '/img/animaux/mini/300x300-6519bb327d3465164dce9e312cdf1835.webp',
+            '/img/animaux/mini/300x300-536805f7f281ee8ee6a8b1065f179119.webp',
+        ],
+        race: "Lion",
+        habitat: "savane",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:6,
+        prenom: 'Zibrou',
+        img: [
+            '/img/animaux/mini/300x300-02215a25ebce6aee574384ffd80ee9f3.webp',
+            '/img/animaux/mini/300x300-797a30293f8f7ca971f603c6d2c050a9.webp',
+            '/img/animaux/mini/300x300-e0bade7dbcdacf3fb449189ec7eb712e.webp',
+        ],
+        race: "Zèbre",
+        habitat: "savane",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:7,
+        prenom: 'Sheer Khan',
+        img: [
+            '/img/animaux/mini/300x300-6836e40835a5322b3bd1b91661dd9a4c.webp',
+            '/img/animaux/mini/300x300-005e62a73ad7ac718c153d4873649a49.webp',
+            '/img/animaux/mini/300x300-c75e38c05d4e231a4fe020b68a493b80.webp',
+            '/img/animaux/mini/300x300-f2739b868d5614be66a4219d25c16fc3.webp',
+        ],
+        race: "Tigre du Bengale",
+        habitat: "jungle",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:8,
+        prenom: 'Fifi',
+        img: [
+            '/img/animaux/mini/300x300-434a33530d73197051b101a4e1604f1e.webp',
+            '/img/animaux/mini/300x300-6bf7d012d316c950f874569f668d97b1.webp',
+        ],
+        race: "Eléphant d'afrique",
+        habitat: "jungle",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:9,
+        prenom: 'Fanny',
+        img: [
+            '/img/animaux/mini/300x300-c810e7adfb06770452e55c3d8666b20b.webp',
+        ],
+        race: "Eléphant d'afrique",
+        habitat: "jungle",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+
+    {
+        id:10,
+        prenom: 'Alix',
+        img: [
+            '/img/animaux/mini/300x300-c4de56859d38947da639f3976016703d.webp',
+            '/img/animaux/mini/300x300-740f8aed861dd7206807e7bea417dc67.webp',
+        ],
+        race: "Alligator",
+        habitat: "marais",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:11,
+        prenom: 'Aligato',
+        img: [
+            '/img/animaux/mini/300x300-0b95c19ebeb0d5978515d6c303fed299.webp',
+            '/img/animaux/mini/300x300-3b9d1008ecdcc0c09046a15b70c62eea.webp',
+        ],
+        race: "Alligator",
+        habitat: "marais",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:12,
+        prenom: 'Biscus',
+        img: [
+            '/img/animaux/mini/300x300-08fdd981dad87050b408c41759009a8d.webp',
+        ],
+        race: "Ibis",
+        habitat: "marais",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    {
+        id:13,
+        prenom: 'Ibizou',
+        img: [
+            '/img/animaux/mini/300x300-1f7e30b40583c1a9ed4fb9b11b060d22.webp',
+            '/img/animaux/mini300x300-15e6636bd02920c0a665621db8f3f9dc.webp',
+        ],
+        race: "Ibis",
+        habitat: "marais",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
 ]
 
