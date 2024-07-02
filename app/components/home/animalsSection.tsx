@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 export function HomeAnimals(){
 
-    const animals = [
+    const animals : {id: number, habitat: string, liste: string[]}[] = [
         {
             id: 1,
             habitat: 'Savane',
@@ -27,11 +27,11 @@ export function HomeAnimals(){
                 <div className="trait"></div>
                 <div className="grid md:grid-cols-3 gap-5">
                     {animals.map((animal) => {
-                        let id = animal.id
-                        let bg_class=''
-                        let text_class = ''
-                        let img = ''
-                        let url = ''
+                        let id : number = animal.id
+                        let bg_class : string =''
+                        let text_class : string = ''
+                        let img : string = ''
+                        let url : string = ''
 
                         if (id === 1){
                             bg_class = 'bg-braun'
@@ -70,7 +70,7 @@ export function HomeAnimals(){
                                     </div>
                                 </Link>
                             </div>
-                        );
+                        )
                     })}
                 </div>
             </section>

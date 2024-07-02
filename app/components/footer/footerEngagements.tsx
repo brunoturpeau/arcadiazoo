@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function FooterEngagement() {
+export default function FooterEngagements() {
     return (
         <div className={`text-center`}>
             <h3>Nos engagements</h3>

@@ -10,7 +10,6 @@ export default function ContactPage(){
                 <h2 className={`h2`}>Formulaire de contact</h2>
                 <div className="trait"></div>
                 <ContactUs/>
-
             </div>
 
         </>

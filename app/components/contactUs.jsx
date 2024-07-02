@@ -34,7 +34,6 @@ export const ContactUs = () => {
 
     function handleMessageChange(e) {
         const value = e.target.value
-        console.log('value', value)
         if (value !== '') {
             setStatusMessage('valid')
         } else {
@@ -78,7 +77,7 @@ export const ContactUs = () => {
                     onChange={handleNameChange}
                     type="text"
                     name="user_name"
-                    placeholder="Renseignez votre nom et votre prénom" required
+                    required
                 />
                 <p
                     className={`text-[#ef4444] mb-5 text-sm ${statusName == 'invalid' ? '' : 'hidden'}`}
@@ -91,9 +90,10 @@ export const ContactUs = () => {
                 <input
                     className={`mb-3 ${statusEmail == 'valid' ? 'bg-success ' : ''} ${statusEmail == 'invalid' ? 'bg-danger ' : ''}`}
                     onChange={handleEmailChange}
-                    placeholder="exemple@email.com" required
+                    placeholder="exemple@email.com"
                     type="email"
                     name="user_email"
+                    required
                 />
                 <p
                     className={`text-[#ef4444] mb-5 text-sm ${statusEmail == 'invalid' ? '' : 'hidden'}`}

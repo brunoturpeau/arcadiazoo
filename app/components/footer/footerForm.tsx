@@ -8,8 +8,8 @@ export default function FooterForm() {
                 <input name={`pseudo`} className={`w-full mb-5`} type="text"/>
                 </label>
                 <label className={`block mb-2`} htmlFor="commentaire">Commentaire
-                <textarea className={`w-full md:mb-2`} name="commentaire" id="inputCommentaire" cols="30"
-                          rows="5"></textarea>
+                <textarea className={`w-full md:mb-2`} name="commentaire" id="inputCommentaire" cols={30}
+                          rows={5}></textarea>
                 </label>
                 <div className="text-center">
                     <button className={`btn-primary`}>Envoyer</button>
