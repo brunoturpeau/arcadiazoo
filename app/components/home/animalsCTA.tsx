@@ -7,13 +7,7 @@ export function CTAAnimals(){
                 <div className={`px-10 text-center sm:text-left text-light text-3xl basis-3/4 md:pe-0`}>
                     Venez découvrir la grande diversité des animaux présentés dans notre parc zoologique.
                 </div>
-                <div className="basis-1/4 text-center">
-                    <button className={`btn-primary`}>
-                        <Link href={`/animaux`} title={"Voir tous les animaux"}>
-                            Voir les animaux
-                        </Link>
-                    </button>
-                </div>
+                <div className="basis-1/4 text-center"></div>
             </div>
         </section>
     )
