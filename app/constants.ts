@@ -43,6 +43,168 @@ export const SERVICES_LIST : {id: number, name: string, content: string}[] = [
     },
 ]
 
+export const ANIMALS_ITEMS = {
+    'adele': {
+        id: 1,
+        prenom: 'Adèle ',
+        slug: 'adele',
+        img: [
+            '/img/animaux/mini/300x300-7d1863aa6303a073b2408bec7f28e14f.webp',
+            '/img/animaux/mini/300x300-d3c529b8f0a6ea3ca760f55c28ab48e8.webp',
+            '/img/animaux/mini/300x300-e334f7cc7b802e0471469180e56caddb.webp',
+            '/img/animaux/mini/300x300-f5e2f08d020304546c7284c1199559ba.webp',
+        ],
+        race: 'Girafe',
+        habitat: 'savane',
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    'ceros': {
+        id:2,
+        prenom: 'Ceros',
+        slug: 'ceros',
+        img: [
+            '/img/animaux/mini/300x300-0d10b57d0df21d5f9dfa5989ed480090.webp',
+        ],
+        race: 'Rhinocéros blanc',
+        habitat: 'jungle',
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    'dundy': {
+    id:3,
+        prenom: 'Dundy',
+    slug: 'dundy',
+    img: [
+    '/img/animaux/mini/300x300-3b9d1008ecdcc0c09046a15b70c62eea.webp',
+    '/img/animaux/mini/300x300-5acd69f31f284d71d861a9f688351c84.webp',
+    '/img/animaux/mini/300x300-da5d45d55c96d92e986268290aa497da.webp',
+],
+    race: "Crocodile",
+    habitat: "marais",
+    description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+    health: "En très bonne forme",
+},
+    'sheila': {
+        id:4,
+        prenom: 'Sheila',
+        slug: 'sheila',
+        img: [
+            '/img/animaux/mini/300x300-95ed91fc9b6097d19dcd40369d9bf40d.webp',
+            '/img/animaux/mini/300x300-aed5b0223b5fb972266e0fabd642c279.webp',
+        ],
+        race: "Lion",
+        habitat: "savane",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    'simba': {
+        id:5,
+        prenom: 'Simba',
+        slug: 'simba',
+        img: [
+            '/img/animaux/mini/300x300-6519bb327d3465164dce9e312cdf1835.webp',
+            '/img/animaux/mini/300x300-536805f7f281ee8ee6a8b1065f179119.webp',
+        ],
+        race: "Lion",
+        habitat: "savane",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    'zibrou': {
+        id:6,
+        prenom: 'Zibrou',
+        slug: 'zibrou',
+        img: [
+            '/img/animaux/mini/300x300-02215a25ebce6aee574384ffd80ee9f3.webp',
+            '/img/animaux/mini/300x300-797a30293f8f7ca971f603c6d2c050a9.webp',
+            '/img/animaux/mini/300x300-e0bade7dbcdacf3fb449189ec7eb712e.webp',
+        ],
+        race: "Zèbre",
+        habitat: "savane",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    'sheer-khan': {
+    id:7,
+        prenom: 'Sheer Khan',
+    slug: 'sheer-khan',
+    img: [
+    '/img/animaux/mini/300x300-6836e40835a5322b3bd1b91661dd9a4c.webp',
+    '/img/animaux/mini/300x300-005e62a73ad7ac718c153d4873649a49.webp',
+    '/img/animaux/mini/300x300-c75e38c05d4e231a4fe020b68a493b80.webp',
+    '/img/animaux/mini/300x300-f2739b868d5614be66a4219d25c16fc3.webp',
+],
+    race: "Tigre du Bengale",
+    habitat: "jungle",
+    description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+    health: "En très bonne forme",
+},
+    'fifi': {
+        id:8,
+        prenom: 'Fifi',
+        slug: 'fifi',
+        img: [
+            '/img/animaux/mini/300x300-434a33530d73197051b101a4e1604f1e.webp',
+            '/img/animaux/mini/300x300-6bf7d012d316c950f874569f668d97b1.webp',
+        ],
+        race: "Eléphant d'afrique",
+        habitat: "jungle",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    'alix': {
+        id:10,
+        prenom: 'Alix',
+        slug: 'alix',
+        img: [
+            '/img/animaux/mini/300x300-c4de56859d38947da639f3976016703d.webp',
+            '/img/animaux/mini/300x300-740f8aed861dd7206807e7bea417dc67.webp',
+        ],
+        race: "Alligator",
+        habitat: "marais",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    'aligato': {
+    id:11,
+        prenom: 'Aligato',
+    slug: 'aligato',
+    img: [
+    '/img/animaux/mini/300x300-0b95c19ebeb0d5978515d6c303fed299.webp',
+    '/img/animaux/mini/300x300-3b9d1008ecdcc0c09046a15b70c62eea.webp',
+],
+    race: "Alligator",
+    habitat: "marais",
+    description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+    health: "En très bonne forme",
+},
+    'biscus': {
+        id:12,
+        prenom: 'Biscus',
+        slug: 'biscus',
+        img: [
+            '/img/animaux/mini/300x300-08fdd981dad87050b408c41759009a8d.webp',
+        ],
+        race: "Ibis",
+        habitat: "marais",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+    'ibizou': {
+        id:13,
+        prenom: 'Ibizou',
+        slug: 'ibizou',
+        img: [
+            '/img/animaux/mini/300x300-1f7e30b40583c1a9ed4fb9b11b060d22.webp',
+            '/img/animaux/mini300x300-15e6636bd02920c0a665621db8f3f9dc.webp',
+        ],
+        race: "Ibis",
+        habitat: "marais",
+        description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
+        health: "En très bonne forme",
+    },
+}
 export const HABITATS_ITEMS = {
     savane: {
         id: 1,
@@ -67,10 +229,11 @@ export const HABITATS_ITEMS = {
     }
 }
 
-export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: string, habitat: string, description: string, health: string}[] = [
+export const ANIMALS_LIST : {id: number, prenom: string, slug: any, img: string[], race: string, habitat: string, description: string, health: string}[] = [
     {
         id:1,
         prenom: 'Adèle ',
+        slug: 'adele',
         img: [
             '/img/animaux/mini/300x300-7d1863aa6303a073b2408bec7f28e14f.webp',
             '/img/animaux/mini/300x300-d3c529b8f0a6ea3ca760f55c28ab48e8.webp',
@@ -85,6 +248,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:2,
         prenom: 'Ceros',
+        slug: 'ceros',
         img: [
             '/img/animaux/mini/300x300-0d10b57d0df21d5f9dfa5989ed480090.webp',
         ],
@@ -96,6 +260,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:3,
         prenom: 'Dundy',
+        slug: 'dundy',
         img: [
             '/img/animaux/mini/300x300-3b9d1008ecdcc0c09046a15b70c62eea.webp',
             '/img/animaux/mini/300x300-5acd69f31f284d71d861a9f688351c84.webp',
@@ -109,6 +274,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:4,
         prenom: 'Sheila',
+        slug: 'sheila',
         img: [
             '/img/animaux/mini/300x300-95ed91fc9b6097d19dcd40369d9bf40d.webp',
             '/img/animaux/mini/300x300-aed5b0223b5fb972266e0fabd642c279.webp',
@@ -121,6 +287,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:5,
         prenom: 'Simba',
+        slug: 'simba',
         img: [
             '/img/animaux/mini/300x300-6519bb327d3465164dce9e312cdf1835.webp',
             '/img/animaux/mini/300x300-536805f7f281ee8ee6a8b1065f179119.webp',
@@ -133,6 +300,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:6,
         prenom: 'Zibrou',
+        slug: 'zibrou',
         img: [
             '/img/animaux/mini/300x300-02215a25ebce6aee574384ffd80ee9f3.webp',
             '/img/animaux/mini/300x300-797a30293f8f7ca971f603c6d2c050a9.webp',
@@ -146,6 +314,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:7,
         prenom: 'Sheer Khan',
+        slug: 'sheer-khan',
         img: [
             '/img/animaux/mini/300x300-6836e40835a5322b3bd1b91661dd9a4c.webp',
             '/img/animaux/mini/300x300-005e62a73ad7ac718c153d4873649a49.webp',
@@ -160,6 +329,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:8,
         prenom: 'Fifi',
+        slug: 'fifi',
         img: [
             '/img/animaux/mini/300x300-434a33530d73197051b101a4e1604f1e.webp',
             '/img/animaux/mini/300x300-6bf7d012d316c950f874569f668d97b1.webp',
@@ -172,6 +342,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:9,
         prenom: 'Fanny',
+        slug: 'fanny',
         img: [
             '/img/animaux/mini/300x300-c810e7adfb06770452e55c3d8666b20b.webp',
         ],
@@ -180,10 +351,10 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
         description: "Eligendi similique dolor saepe aut. Et similique nisi et vel at et. Nostrum delectus accusamus quos voluptates ut.",
         health: "En très bonne forme",
     },
-
     {
         id:10,
         prenom: 'Alix',
+        slug: 'alix',
         img: [
             '/img/animaux/mini/300x300-c4de56859d38947da639f3976016703d.webp',
             '/img/animaux/mini/300x300-740f8aed861dd7206807e7bea417dc67.webp',
@@ -196,6 +367,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:11,
         prenom: 'Aligato',
+        slug: 'aligato',
         img: [
             '/img/animaux/mini/300x300-0b95c19ebeb0d5978515d6c303fed299.webp',
             '/img/animaux/mini/300x300-3b9d1008ecdcc0c09046a15b70c62eea.webp',
@@ -208,6 +380,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:12,
         prenom: 'Biscus',
+        slug: 'biscus',
         img: [
             '/img/animaux/mini/300x300-08fdd981dad87050b408c41759009a8d.webp',
         ],
@@ -219,6 +392,7 @@ export const ANIMALS_LIST : {id: number, prenom: string, img: string[], race: st
     {
         id:13,
         prenom: 'Ibizou',
+        slug: 'ibizou',
         img: [
             '/img/animaux/mini/300x300-1f7e30b40583c1a9ed4fb9b11b060d22.webp',
             '/img/animaux/mini300x300-15e6636bd02920c0a665621db8f3f9dc.webp',
