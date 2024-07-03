@@ -25,15 +25,15 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
         classColortext = 'text-dark'
         classBgImage = "bg-[url('/img/jungle.png')] "
     }
-    console.log('page name')
+
     return (
         <>
             <Header title={title}/>
             <div className="container mx-auto p-5">
-                <div className="flex flex-row gap-5">
-                    <div className="basis-1/2 lg:basis-1/3">
+                <div className="flex flex-col md:flex-row gap-5">
+                    <div className="basis-1 z-[-1] md:basis-1/2 lg:basis-1/3">
                         <SelectHabitat/>
-                        <div className={`bg-white drop-shadow-lg`}>
+                        <div className={`bg-white drop-shadow-lg hidden md:block`}>
                             <div className={`${classBgImage} bg-no-repeat bg-center bg-cover h-[200px]`}>
                             </div>
                             <h2 className={`${classBgColor} ${classColortext} flex h-[50px] justify-center items-center uppercase text-2xl font-extrabold`}>
@@ -44,8 +44,8 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
                             </div>
                         </div>
                     </div>
-                    <div className={`basis-1/2 lg:basis-2/3 flex flex-col w-full`}>
-                        <div className="w-full px-5 pb-10">
+                    <div className={`basis-1 md:basis-1/2 lg:basis-2/3 flex flex-col`}>
+                        <div className="lg:px-5 pb-10">
                             {ANIMALS_LIST.map((animal : {id: number, prenom: string, slug: string, img: string[], race: string, habitat: string, description: string, health: string})=>{
                                 if (animal.habitat === habitatName){
                                     const id: number = animal.id
