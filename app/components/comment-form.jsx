@@ -10,7 +10,6 @@ export const CommentForm = () => {
     const [msg, setMsg] = useState('')
     const [statusSend, setStatusSend] = useState('')
 
-
     function handlePseudoChange(e) {
         const value = e.target.value
         let valueLenght = value.length
@@ -54,9 +53,7 @@ export const CommentForm = () => {
                 type="text"
                 required
             />
-            <p
-                className={`text-white mb-5 text-sm ${statusPseudo === 'invalid' ? '' : 'hidden'}`}
-            >
+            <p className={`text-white mb-5 text-sm ${statusPseudo === 'invalid' ? '' : 'hidden'}`} >
                 Le champ pseudo doit contenir entre 3 et 20 caractères
             </p>
             <label className={`block mb-2`} htmlFor="commentaire">Commentaire</label>
@@ -69,15 +66,12 @@ export const CommentForm = () => {
                 rows={5}
                 required
             ></textarea>
-            <p
-                className={`text-white mb-5 text-sm ${statusMessage === 'invalid' ? '' : 'hidden'}`}
-            >
+            <p className={`text-white mb-5 text-sm ${statusMessage === 'invalid' ? '' : 'hidden'}`} >
                 Le champ message ne doit pas être vide.
             </p>
             <div className="text-center mt-5">
                 <button className={`btn-primary`}>Envoyer</button>
             </div>
-
         </form>
     )
 }
