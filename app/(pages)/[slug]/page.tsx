@@ -47,9 +47,6 @@ export default function AnimalDetailPage(p: { params: {slug: keyof typeof ANIMAL
                         </div>
                     </div>
 
-
-
-
                     <p>
                     {animal.img.length} images
                     </p>
