@@ -1,4 +1,5 @@
 
+
 export const COMMENTS_LIST : {id: number, pseudo: string, comment: string, date: string}[] = [
     {
         id: 1,
@@ -20,26 +21,30 @@ export const COMMENTS_LIST : {id: number, pseudo: string, comment: string, date:
     },
 ]
 
-export const SERVICES_LIST : {id: number, name: string, content: string}[] = [
+export const SERVICES_LIST : {id: number, name: string, content: string, slug:string}[] = [
     {
         id: 1,
         name : "Restauration",
         content: "Savourez une pause au cœur de la jungle avec notre restaurant au zoo. Des mets exotiques aux classiques appréciés des familles, notre menu éveille les papilles. Détendez-vous entre deux explorations et rechargez vos batteries dans notre oasis gastronomique.",
+        slug: "restauration",
     },
     {
         id: 2,
         name : "Visite guidée",
         content: "Explorez notre zoo de manière experte avec nos visites guidées gratuites. Nos guides passionnés vous emmènent dans un voyage captivant à la découverte de nos résidents à poils, plumes et écailles. Une immersion éducative pour toute la famille, sans frais supplémentaires.",
+        slug: "visite-guidee",
     },
     {
         id: 3,
         name : "Visite en petit train",
         content: "Parcourez notre vaste domaine à bord de notre train safari. Glissez à travers les habitats animaliers dans le confort de nos wagons, écoutant les histoires captivantes de nos conducteurs. Une aventure inoubliable pour découvrir les merveilles de la faune mondiale, sans effort.",
+        slug: "visite-en-petit-train",
     },
     {
         id: 4,
         name : "Spectacle de Perroquets",
         content: "Le zoo propose un spectacle d’otaries captivant, à ne pas manquer, se déroulant à 11h00, 15h00 et 17h00 chaque jour. Ces charmantes créatures marines exécutent des tours impressionnants, alliant acrobaties et jeux d’adresse, pour le plus grand plaisir des spectateurs. Le spectacle est une expérience éducative et divertissante, mettant en valeur l’intelligence et la grâce des otaries tout en sensibilisant à la conservation des espèces marines.",
+        slug: "spectacle-de-perroquets",
     },
 ]
 
@@ -404,3 +409,20 @@ export const ANIMALS_LIST : {id: number, prenom: string, slug: any, img: string[
     },
 ]
 
+export const HABITATS_NAV :{id: number, slug: string, title: string}[] = [
+    {
+        id: 1,
+        slug: 'savane',
+        title: 'Les animaux de la savane',
+    },
+    {
+        id: 2,
+        slug: 'marais',
+        title: 'Les animaux du marais',
+    },
+    {
+        id: 3,
+        slug: 'jungle',
+        title: 'Les animaux de la jungle',
+    },
+]

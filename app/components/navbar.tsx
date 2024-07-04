@@ -2,7 +2,9 @@
 
 import Link from 'next/link'
 import { useState } from "react"
-import {usePathname} from "next/navigation";
+import {usePathname} from "next/navigation"
+import {HABITATS_NAV} from "@/app/constants";
+
 export function Navbar(){
     const [isMenuHide, setIsMenuHide] = useState(true)
     const pathname = usePathname()
@@ -46,6 +48,15 @@ export function Navbar(){
                           href="/habitats">
                         <span>Animaux</span>
                     </Link>
+                    <ul className="text-dark sm:w-auto sm:absolute top-12 bg-light z-[2] sm:p-2">
+                        {HABITATS_NAV.map((habitat:{id: number, slug: string, title: string}) => (
+                            <li key={habitat.slug}>
+                                <Link href={`/habitats/${habitat.slug}`}>
+                                    {habitat.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </li>
                 <li className={`li-nav`}>
                     <Link className={`link ${pathname === '/avis' ? 'active' : ''}`} onClick={closeMenuMobile}

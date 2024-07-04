@@ -27,7 +27,7 @@
         @apply absolute border-t border-t-light top-12 bg-primary flex-col w-full justify-center justify-items-center md:border-0 md:flex md:static md:w-auto md:flex-row;
     }
     .li-nav {
-        @apply block flex items-center justify-center w-full h-12;
+        @apply block flex flex-col items-center justify-center w-full;
     }
     .link{
         @apply uppercase font-semibold flex flex-row h-full w-full px-4 items-center justify-center text-white hover:bg-yellow-alt hover:text-dark;
