@@ -30,7 +30,7 @@
         @apply block flex flex-col items-center justify-center w-full;
     }
     .link{
-        @apply uppercase font-semibold flex flex-row h-full w-full px-4 items-center justify-center text-white hover:bg-yellow-alt hover:text-dark;
+        @apply block py-2.5 uppercase font-semibold flex flex-row h-full w-full px-4 items-center justify-center text-white hover:bg-yellow-alt hover:text-dark;
     }
     .link.active{
         @apply bg-yellow-alt text-dark;

@@ -7,7 +7,7 @@ export default function ServicesPage(){
     return (
         <>
             <Header title="Les services" />
-            <div className="mt-12 pb-10 container mx-auto px-5">
+            <div className="mt-12 pb-10 container relative z-[-1] mx-auto px-5">
                 <div className="flex flex-col gap-5 lg:w-[800px] mx-auto">
 
                     {services.map((service : {id: number, name: string, content: string}) => {

@@ -22,7 +22,7 @@ export function Navbar(){
     }
 
     return (
-        <nav className="drop-shadow-xl bg-primary text-light flex justify-between sm:px-4">
+        <nav className="drop-shadow-xl bg-primary text-light flex justify-between md:px-4">
             <div className={`h-12 text-raleway font-bold flex items-center ps-5 text-lg`}>
                 <Link className={`text-white border-e border-e-light border-e-1 pe-5`} href="/">ARCADIA ZOO</Link>
             </div>
@@ -48,10 +48,10 @@ export function Navbar(){
                           href="/habitats">
                         <span>Animaux</span>
                     </Link>
-                    <ul className="text-dark sm:w-auto sm:absolute top-12 bg-light z-[2] sm:p-2">
+                    <ul className="text-dark w-full md:w-auto md:absolute top-12 bg-light z-[2]">
                         {HABITATS_NAV.map((habitat:{id: number, slug: string, title: string}) => (
                             <li key={habitat.slug}>
-                                <Link href={`/habitats/${habitat.slug}`}>
+                                <Link className={`block p-2 hover:bg-yellow-alt hover:text-dark text-center`} href={`/habitats/${habitat.slug}`}>
                                     {habitat.title}
                                 </Link>
                             </li>
@@ -71,7 +71,7 @@ export function Navbar(){
                     </Link>
                 </li>
             </ul>
-            <button id={`btn-burger`} onClick={toggleBtnMenu} aria-label="btn-burger" className="sm:hidden me-3">
+            <button id={`btn-burger`} onClick={toggleBtnMenu} aria-label="btn-burger" className="md:hidden me-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                      className="w-8 h-8" viewBox="0 0 16 16">
                     <path
