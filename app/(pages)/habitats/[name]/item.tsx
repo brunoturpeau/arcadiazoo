@@ -12,7 +12,7 @@ export class Item extends Component<{ animalId: number, animalName: string, anim
 
         return (
             <>
-                <div className={`bg-white flex flex-col items-center sm:flex sm:flex-row justify-between mb-5 p-5 mx-10 sm:mx-0 sm:p-0  drop-shadow-lg`}
+                <div className={`bg-white flex flex-col items-center sm:flex sm:flex-row justify-between mb-5 p-5 mx-10 sm:mx-0 sm:p-0 shadow-lg`}
                      key={animalId}>
                     <Image className={`rounded-full sm:rounded-none shadow-xl sm:shadow-none`} src={animalCover} alt={animalName} width={150} height={150}/>
                     <div className={`flex flex-col items-center w-full justify-center sm:ps-10`}>

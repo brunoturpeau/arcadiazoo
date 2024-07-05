@@ -29,9 +29,9 @@ export default function HabitatDetailPage(p: { params: {name: keyof typeof HABIT
     return (
         <>
             <Header title={title}/>
-            <div className="container relative z-[-1] mx-auto p-5">
+            <div className="container mx-auto p-5">
                 <div className="flex flex-col md:flex-row gap-5">
-                    <div className="basis-1 z-[-1] md:basis-1/2 lg:basis-1/3">
+                    <div className="basis-1 md:basis-1/2 lg:basis-1/3">
                         <SelectHabitat/>
                         <div className={`bg-white drop-shadow-lg hidden md:block`}>
                             <div className={`${classBgImage} bg-no-repeat bg-center bg-cover h-[200px]`}>

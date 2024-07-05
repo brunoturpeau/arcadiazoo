@@ -13,7 +13,6 @@ export default function AnimalDetailPage(p: { params: {slug: keyof typeof ANIMAL
     const description: string = animal.description
     const health: string = animal.health
 
-
     return (
         <>
             <Header title={name} />

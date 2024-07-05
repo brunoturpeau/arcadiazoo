@@ -7,14 +7,14 @@ import {HABITATS_NAV} from "@/app/constants";
 
 export function Navbar(){
     const [isMenuHide, setIsMenuHide] = useState(true)
-    const pathname = usePathname()
+    const [isSubMenuHide, setIsSubMenuHide] = useState(true)
+    const pathname: string = usePathname()
     function toggleBtnMenu() {
         if (isMenuHide) {
             setIsMenuHide(false)
         } else {
             setIsMenuHide(true)
         }
-        console.log("Toggle", isMenuHide)
     }
 
     function closeMenuMobile() {
@@ -44,14 +44,25 @@ export function Navbar(){
                     </Link>
                 </li>
                 <li className={`li-nav`}>
-                    <Link className={`link ${pathname === '/habitats' ? 'active' : ''}`} onClick={closeMenuMobile}
-                          href="/habitats">
+                    <Link
+                        className={`link ${pathname === '/habitats' ? 'active' : ''}`}
+                        onClick={closeMenuMobile}
+                        onMouseEnter = {() => setIsSubMenuHide(false)}
+                        onMouseLeave={() => setIsSubMenuHide(true)}
+                        href="/habitats">
                         <span>Animaux</span>
                     </Link>
-                    <ul className="text-dark w-full md:w-auto md:absolute top-12 bg-light z-[2]">
+                    <ul
+                        className={`${isSubMenuHide  ? 'hidden' : ''} text-dark w-full md:w-auto md:absolute top-12 bg-light z-[2]`}
+                        onMouseEnter = {() => setIsSubMenuHide(false)}
+                        onMouseLeave={() => setIsSubMenuHide(true)}
+                    >
                         {HABITATS_NAV.map((habitat:{id: number, slug: string, title: string}) => (
                             <li key={habitat.slug}>
-                                <Link className={`block p-2 hover:bg-yellow-alt hover:text-dark text-center`} href={`/habitats/${habitat.slug}`}>
+                                <Link
+                                    onClick={closeMenuMobile}
+                                    className={`block p-2 hover:bg-yellow-alt hover:text-dark text-center`}
+                                    href={`/habitats/${habitat.slug}`}>
                                     {habitat.title}
                                 </Link>
                             </li>
