@@ -5,7 +5,7 @@ export default function AvisPage(){
     return (
         <>
             <Header title={`Vos commentaires`}/>
-            <section className={`mt-12 pb-10 container mx-auto px-5`}>
+            <section className={`mt-12 pb-10 container relative z-[-1] mx-auto px-5`}>
                 <div className="flex flex-col gap-5 lg:w-[800px] mx-auto">
                     {comments.map((comment :{id:number, pseudo: string, comment: string, date: string} ) => {
                         return (
