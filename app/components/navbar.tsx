@@ -57,8 +57,8 @@ export function Navbar(){
                         onMouseEnter = {() => setIsSubMenuHide(false)}
                         onMouseLeave={() => setIsSubMenuHide(true)}
                     >
-                        {HABITATS_NAV.map((habitat:{id: number, slug: string, title: string}) => (
-                            <li key={habitat.slug}>
+                        {HABITATS_NAV.map((habitat:{id: number, slug: string, title: string}, index: number) => (
+                            <li key={index}>
                                 <Link
                                     onClick={closeMenuMobile}
                                     className={`block p-2 hover:bg-yellow-alt hover:text-dark text-center`}
