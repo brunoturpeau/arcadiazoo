@@ -234,7 +234,7 @@ export const HABITATS_ITEMS = {
     }
 }
 
-export const ANIMALS_LIST : {id: number, prenom: string, slug: any, img: string[], race: string, habitat: string, description: string, health: string}[] = [
+export const ANIMALS_LIST : {id: number, prenom: string, slug: string, img: string[], race: string, habitat: string, description: string, health: string}[] = [
     {
         id:1,
         prenom: 'Adèle ',
