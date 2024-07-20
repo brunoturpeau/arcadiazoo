@@ -60,7 +60,9 @@ export function HomeServices() {
                     })}
                 </div>
             </section>
-            <section className={`pb-10 container mx-auto px-5`}>
+            {/* Connexion à l'API */}
+            
+            {/* <section className={`pb-10 container mx-auto px-5`}>
                 <h2 className={`h2`}>NOS SERVICES</h2>
                 <div className="trait"></div>
                 <div className="grid md:grid-cols-3 gap-5">
@@ -102,7 +104,7 @@ export function HomeServices() {
                         <h2>Chargement...</h2>
                     )}
                 </div>
-            </section>
+            </section> */}
         </>
 
 )
